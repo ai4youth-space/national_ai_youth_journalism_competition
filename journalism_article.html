@@ -337,6 +337,12 @@
         font-size: 0.9rem;
       }
 
+      .media-card audio {
+        display: block;
+        width: 100%;
+        margin-top: 8px;
+      }
+
       details {
         border-top: 1px solid var(--line);
         border-bottom: 1px solid var(--line);
@@ -644,14 +650,28 @@
             I first used GPT-6 Astra to compose instrumental music in ABC notation. One experiment began as a Dorian piece in 7/8 before I changed its meter and musical direction. Another was a fast C Hijaz waltz for flute, violin, and piano, inspired by a mystical scene involving a lantern, an underground chamber, and a faceless dancer. I repeatedly revised the pieces, asking for clearer melodies, greater rhythmic variety, softer piano writing, and fewer dissonant chords.
           </p>
 
-          <div class="media-grid" aria-label="Media placeholders">
+          <div class="media-grid" aria-label="Music experiment audio files">
             <div class="media-card">
               <span class="play-icon" aria-hidden="true"></span>
-              <div><b>Dorian experiment</b><span>Replace this card with a video or audio embed.</span></div>
+              <div>
+                <b>Dorian experiment</b>
+                <span>Audio file 1</span>
+                <audio controls preload="metadata">
+                  <source src="assets/1.wav" type="audio/wav" />
+                  <a href="assets/1.wav">Download audio file 1</a>
+                </audio>
+              </div>
             </div>
             <div class="media-card">
               <span class="play-icon" aria-hidden="true"></span>
-              <div><b>C Hijaz experiment</b><span>Replace this card with a video or audio embed.</span></div>
+              <div>
+                <b>C Hijaz experiment</b>
+                <span>Audio file 2</span>
+                <audio controls preload="metadata">
+                  <source src="assets/2.wav" type="audio/wav" />
+                  <a href="assets/2.wav">Download audio file 2</a>
+                </audio>
+              </div>
             </div>
             <div class="media-card">
               <span class="play-icon" aria-hidden="true"></span>
